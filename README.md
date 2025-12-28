@@ -1,5 +1,7 @@
 # Google Drive Manager
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-DurianLAB/google--drive--api-blue)](https://github.com/DurianLAB/google-drive-api)
+
 A Python script to interact with Google Drive for listing folders, uploading local folders, and creating backups using the Google Drive API.
 
 ## Requirements
@@ -52,6 +54,20 @@ Run the script from the command line with one of the following commands:
 
 On the first run, the script will open a browser for OAuth authorization. Follow the prompts to grant access.
 
+## Testing
+
+Run the test suite with:
+
+```
+python -m pytest
+```
+
+Or
+
+```
+python test_drive_manager.py
+```
+
 ## Notes
 
 - The script uses OAuth for secure authentication.
@@ -59,3 +75,7 @@ On the first run, the script will open a browser for OAuth authorization. Follow
 - Backups are stored in timestamped folders (e.g., `Backup_20231227_120000`).
 - Ensure your Google account has sufficient storage space.
 - For issues, check the Google Drive API documentation or verify your credentials.
+
+## Issues
+
+See [Issue #1](https://github.com/DurianLAB/google-drive-api/issues/1) for integration into LaTeX DocOps module.
